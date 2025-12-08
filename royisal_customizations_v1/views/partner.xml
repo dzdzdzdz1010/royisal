@@ -1,0 +1,28 @@
+<odoo>
+    <record id="royisal_partner_view_inherit" model="ir.ui.view">
+        <field name="name">royisal.partner.view.inherit</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='category_id']" position="after">
+                <field name="employee_count" invisible="not is_company"/>
+                <field name="contact_owner_id"/>
+                <field name="whatsapp_number"/>
+                <field name="last_contact_date"/>
+            </xpath>
+            <xpath expr="//group" posiiton="after">
+                <group invisible="is_company">
+                    <group string="Personal Information">
+                        <field name="first_name"/>
+                        <field name="last_name"/>
+                    </group>
+                    <group>
+                    </group>
+                </group>
+            </xpath>
+            <xpath expr="//field[@name='company_registry']" position="attributes">
+                <attribute name="string">Company Registration Number</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,99 @@
+<odoo>
+    <record id="royisal_custom_crm" model="ir.ui.view">
+        <field name="name">royisal.custom.crm.view</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group//group[4]//field[@name='tag_ids']" position="after">
+                <field name="interested_id"/>
+                <field name="business_status"/>
+                <field name="business_type_id"/>
+                <field name="deal_pipeline"/>
+            </xpath>
+            <xpath expr="//group[@name='lead_info']" position="inside">
+                <field name="interested_id"/>
+                <field name="business_status"/>
+                <field name="business_type_id"/>
+                <field name="deal_pipeline"/>
+            </xpath>
+            <xpath expr="//notebook" positon="inside">
+                <page name="royisal_deal_order_lines" string="Order Lines">
+                    <field name="deal_line_ids">
+                        <list>
+                            <field name="product_id"/>
+                            <field name="description" placeholder="Enter description here"/>
+                            <field name="reference"/>
+                            <field name="product_price"/>
+                            <field name="quantity"/>
+                            <field name="subtotal" sum="Total price"/>
+                        </list>
+                        <form string="Order Lines" invisible="1"> 
+                            <sheet>
+                            <group>
+                                <group>
+                                    <field name="product_id"/>
+                                    <field name="product_price"/>
+                                    <field name="quantity"/>
+                                </group>
+                                <group>
+                                    <field name="reference"/>
+                                </group>
+                            </group>
+                                <field name="attribute_line_ids" nolabel="1">
+                                    <list editable="bottom">
+                                        <field name="attribute_id"/>
+                                        <field name="value_ids" widget="many2many_tags" domain="[('attribute_id','=',attribute_id)]"/>
+                                    </list>
+                                </field>
+                            </sheet>
+                        </form>
+                    </field>
+                
+                </page>
+                <page name="royisal_custom_info" string="Extra Information" invisible="type == 'lead'">
+                    <group>
+                        <field name="create_date" readonly="1"/>
+                        <field name="last_contact_date"/>
+                        <field name="ip_country"/>
+                    </group>
+                </page>
+            </xpath>
+            <xpath expr="//notebook//page[@name='lead']//group//group[1]" positon="inside">
+                <field name="employee_count"/>
+            </xpath>
+            <xpath expr="//notebook//page[@name='lead']//group//group[2]" positon="inside">
+                <field name="whatsapp_number" readonly="0"/>
+                <field name="contact_email" readonly="0" placeholder="john.doe@example.com"/>
+            </xpath>
+            <xpath expr="//group//group[4]//field[@name='user_id']" position="after">
+                <field name="contact_owner_id"/>
+            </xpath>
+            <xpath expr="//group//group[5]//field[@name='user_id']" position="after">
+                <field name="contact_owner_id"/>
+            </xpath>
+            <xpath expr="//group[@name='lead_info']//div//field[@name='phone']" position="after">
+                <field name="whatsapp_number"/>
+            </xpath>
+
+            <!-- Renaming Standard Fields -->
+
+            <xpath expr="//notebook//page[@name='lead']//field[@name='medium_id']" position="attributes">
+                <attribute name="string">Action By</attribute>
+            </xpath>
+            <xpath expr="//notebook//page[@name='lead']//field[@name='campaign_id']" position="attributes">
+                <attribute name="string">Registered In?</attribute>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="royisal_custom_crm_tag_view" model="ir.ui.view">
+        <field name="name">royisal.custom.crm.tag.view</field>
+        <field name="model">crm.tag</field>
+        <field name="inherit_id" ref="sales_team.sales_team_crm_tag_view_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='color']" position="before">
+                <field name="type"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
