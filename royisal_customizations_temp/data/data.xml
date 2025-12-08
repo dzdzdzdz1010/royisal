@@ -1,0 +1,146 @@
+<odoo>
+    <data>
+    <record id="royisal_product_category_1" model="product.category">
+        <field name="name">Charm</field>
+    </record>
+    <record id="royisal_product_category_2" model="product.category">
+        <field name="name">Earrings/ Ear Cuff</field>
+    </record>
+    <record id="royisal_product_category_3" model="product.category">
+        <field name="name">Pendant</field>
+    </record>
+    <record id="royisal_product_category_4" model="product.category">
+        <field name="name">Necklace</field>
+    </record>
+    <record id="royisal_product_category_5" model="product.category">
+        <field name="name">Arm Cuff</field>
+    </record>
+    <record id="royisal_product_category_6" model="product.category">
+        <field name="name">Bangle</field>
+    </record>
+    <record id="royisal_product_category_7" model="product.category">
+        <field name="name">Bracelet</field>
+    </record>
+    <record id="royisal_product_category_8" model="product.category">
+        <field name="name">Ring</field>
+    </record>
+    <record id="royisal_product_category_9" model="product.category">
+        <field name="name">Ankle Bracelet</field>
+    </record>
+    <record id="royisal_product_category_10" model="product.category">
+        <field name="name">Toe Rings</field>
+    </record>
+    <record id="royisal_product_category_11" model="product.category">
+        <field name="name">Accessories</field>
+    </record>
+    <record id="royisal_product_category_12" model="product.category">
+        <field name="name">Others</field>
+    </record>
+
+    <!-- Royisal Material -->
+    <record id="royisal_material_1" model="royisal.material">
+        <field name="name">N/A</field>
+    </record>
+    <record id="royisal_material_2" model="royisal.material">
+        <field name="name">Gold</field>
+    </record>
+    <record id="royisal_material_3" model="royisal.material">
+        <field name="name">Silver</field>
+    </record>
+    <record id="royisal_material_4" model="royisal.material">
+        <field name="name">Recycle Silver</field>
+    </record>
+    <record id="royisal_material_5" model="royisal.material">
+        <field name="name">Brass</field>
+    </record>
+    <record id="royisal_material_6" model="royisal.material">
+        <field name="name">Bronze</field>
+    </record>
+    <record id="royisal_material_7" model="royisal.material">
+        <field name="name">Stainless Steel</field>
+    </record>
+    <record id="royisal_material_8" model="royisal.material">
+        <field name="name">Plastic</field>
+    </record>
+    <record id="royisal_material_9" model="royisal.material">
+        <field name="name">Mixed Metal</field>
+    </record>
+
+    <!-- Stone Types -->
+    <record id="royisal_stone_type_1" model="royisal.stone.type">
+        <field name="name">Plain (No Stone)</field>
+    </record>
+    <record id="royisal_stone_type_2" model="royisal.stone.type">
+        <field name="name">CZ</field>
+    </record>
+    <record id="royisal_stone_type_3" model="royisal.stone.type">
+        <field name="name">Crystal</field>
+    </record>
+    <record id="royisal_stone_type_4" model="royisal.stone.type">
+        <field name="name">Pearl</field>
+    </record>
+    <record id="royisal_stone_type_5" model="royisal.stone.type">
+        <field name="name">Natural Stone</field>
+    </record>
+    <record id="royisal_stone_type_6" model="royisal.stone.type">
+        <field name="name">Synthetic</field>
+    </record>
+    <record id="royisal_stone_type_7" model="royisal.stone.type">
+        <field name="name">Lab Growth</field>
+    </record>
+    <record id="royisal_stone_type_8" model="royisal.stone.type">
+        <field name="name">Marcasite</field>
+    </record>
+    <record id="royisal_stone_type_9" model="royisal.stone.type">
+        <field name="name">Plastic</field>
+    </record>
+    <record id="royisal_stone_type_10" model="royisal.stone.type">
+        <field name="name">Enamel</field>
+    </record>
+    <record id="royisal_stone_type_11" model="royisal.stone.type">
+        <field name="name">Diamonds</field>
+    </record>
+    <record id="royisal_stone_type_12" model="royisal.stone.type">
+        <field name="name">Stone Beads</field>
+    </record>
+    <record id="royisal_stone_type_13" model="royisal.stone.type">
+        <field name="name">Various</field>
+    </record>
+
+    <!-- Plating -->
+
+    <record id="royisal_plating_1" model="royisal.plating">
+        <field name="name">No plating</field>
+        </record>
+        <record id="royisal_plating_2" model="royisal.plating">
+        <field name="name">Silver Plating</field>
+        </record>
+        <record id="royisal_plating_3" model="royisal.plating">
+        <field name="name">Rhodium Plating</field>
+        </record>
+        <record id="royisal_plating_4" model="royisal.plating">
+        <field name="name">Black Rhodium Plating</field>
+        </record>
+        <record id="royisal_plating_5" model="royisal.plating">
+        <field name="name">Gold Plating</field>
+        </record>
+        <record id="royisal_plating_6" model="royisal.plating">
+        <field name="name">2 tone plating</field>
+        </record>
+        <record id="royisal_plating_7" model="royisal.plating">
+        <field name="name">3 tone plating</field>
+        </record>
+        <record id="royisal_plating_8" model="royisal.plating">
+        <field name="name">PVD Plating</field>
+        </record>
+        <record id="royisal_plating_9" model="royisal.plating">
+        <field name="name">Anti tarnish</field>
+        </record>
+        <record id="royisal_plating_10" model="royisal.plating">
+        <field name="name">E-coating</field>
+        </record>
+        <record id="royisal_plating_11" model="royisal.plating">
+        <field name="name">Oxidation</field>
+    </record>
+    </data>
+</odoo>

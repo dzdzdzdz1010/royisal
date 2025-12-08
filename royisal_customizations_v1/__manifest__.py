@@ -20,6 +20,7 @@
         'security/ir.model.access.csv',
         'views/crm_customizations.xml',
         'views/partner.xml',
+        'data/data.xml'
     ],
     'installable': True,
     'auto_install': True,

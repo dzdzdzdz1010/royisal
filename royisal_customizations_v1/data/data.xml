@@ -1,0 +1,32 @@
+<odoo>
+    <data>
+        <record id="business_type_1" model="crm.tag">
+            <field name="name">Store Retailers (Startup)</field>
+            <field name="type">business_type</field>
+        </record>
+        <record id="business_type_2" model="crm.tag">
+            <field name="name">Store Retailers (1-5 Shops)</field>
+            <field name="type">business_type</field>
+        </record>
+        <record id="business_type_3" model="crm.tag">
+            <field name="name">Store Retailers (over 5 shops)</field>
+            <field name="type">business_type</field>
+        </record>
+        <record id="business_type_4" model="crm.tag">
+            <field name="name">Online Retailers (Startup 1 website)</field>
+            <field name="type">business_type</field>
+        </record>
+        <record id="business_type_5" model="crm.tag">
+            <field name="name">Online Retailers (over 2 websites)</field>
+            <field name="type">business_type</field>
+        </record>
+        <record id="business_type_6" model="crm.tag">
+            <field name="name">Wholesale and Retail</field>
+            <field name="type">business_type</field>
+        </record>
+        <record id="business_type_7" model="crm.tag">
+            <field name="name">Concept Stage</field>
+            <field name="type">business_type</field>
+        </record>
+    </data>
+</odoo>

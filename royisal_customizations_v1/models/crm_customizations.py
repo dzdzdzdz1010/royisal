@@ -30,7 +30,7 @@ class CRMLeadCustomizations(models.Model):
         ('51-200', '51-200'),
         ('201-500', '201-500'),
         ('500_up', '500+'),
-    ], string='Employee Count',related="partner_id.employee_count")
+    ], string='Employee Count',related="partner_id.employee_count",store=True,readonly=False)
 
     deal_pipeline = fields.Selection([
         ('Ecommerce Pipeline', 'Ecommerce Pipeline'),

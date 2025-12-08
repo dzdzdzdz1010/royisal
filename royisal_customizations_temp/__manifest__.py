@@ -18,7 +18,9 @@
     'data': [
         # 'security/security.xml',
         'security/ir.model.access.csv',
+        'data/data.xml',
         'views/views.xml',
+        
     ],
     'installable': True,
     'auto_install': True,
