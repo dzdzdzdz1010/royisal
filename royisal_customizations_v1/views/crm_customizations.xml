@@ -17,7 +17,7 @@
                 <field name="deal_pipeline"/>
             </xpath>
             <xpath expr="//notebook" positon="inside">
-                <page name="royisal_deal_order_lines" string="Order Lines">
+                <page name="royisal_deal_order_lines" string="Order Lines" invisible="1">
                     <field name="deal_line_ids">
                         <list>
                             <field name="product_id"/>
@@ -27,7 +27,7 @@
                             <field name="quantity"/>
                             <field name="subtotal" sum="Total price"/>
                         </list>
-                        <form string="Order Lines" invisible="1"> 
+                        <form string="Order Lines" > 
                             <sheet>
                             <group>
                                 <group>
@@ -57,6 +57,11 @@
                         <field name="ip_country"/>
                     </group>
                 </page>
+            </xpath>
+            <xpath expr="//page[@name='extra']//group//group[3]" position="inside">
+                            <field name="create_date" readonly="1"/>
+                        <field name="last_contact_date"/>
+                        <field name="ip_country"/>
             </xpath>
             <xpath expr="//notebook//page[@name='lead']//group//group[1]" positon="inside">
                 <field name="employee_count"/>
