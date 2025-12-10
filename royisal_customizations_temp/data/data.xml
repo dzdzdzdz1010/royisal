@@ -143,6 +143,7 @@
         <field name="name">Oxidation</field>
         </record>
 
+    <!-- Business Types -->
         <record id="business_type_1" model="royisal.business.type">
             <field name="name">Store Retailers (Startup)</field>
         </record>
@@ -164,5 +165,19 @@
         <record id="business_type_7" model="royisal.business.type">
             <field name="name">Concept Stage</field>
         </record>
+
+    <!-- Interests -->
+        <record id="interest_1" model="royisal.interests">
+            <field name="name">ODM (Your brand, our designs)</field>
+        </record>
+
+        <record id="interest_2" model="royisal.interests">
+            <field name="name">OEM (You design, we create)</field>
+        </record>
+
+        <record id="interest_3" model="royisal.interests">
+            <field name="name">Other</field>
+        </record>
+
     </data>
 </odoo>
