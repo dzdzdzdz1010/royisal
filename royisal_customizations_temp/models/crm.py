@@ -10,6 +10,7 @@ class CRMCustomFields(models.Model):
     last_name = fields.Char(string="Last Name",related="partner_id.last_name",store=True,readonly=False)
     whatsapp_number = fields.Char(string="WhatsApp Number")
 
+    original_source_id = fields.Many2one('royisal.source')
     source_online_id = fields.Many2many('royisal.lead.source.online','lead_source_online_rel','lead_id','source_id', string="Lead Source (Online)")
     source_offline_id = fields.Many2one('royisal.lead.source.offline',string="Lead Source (Offline)")
     lead_status = fields.Selection([
@@ -67,6 +68,10 @@ class CRMCustomFields(models.Model):
     recent_deal_amount = fields.Float(string="Recent Deal Amount")
     interested_quantity = fields.Char(string="Interested Quantity")
 
+class RoyisalSource(models.Model):
+    _name = 'royisal.source'
+
+    name = fields.Char(string="Name",required=True)
 class RoyisalBusinessType(models.Model):
     _name = 'royisal.business.type'
 

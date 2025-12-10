@@ -23,7 +23,7 @@
                         <field name="lifecycle_stage"/>
                         <field name="customer_status"/>
                         <field name="create_date"/>
-                        <field name="medium_id" string="Action By"/>
+                        <field name="original_source_id" string="Action By"/>
                         <field name="last_contacted_date"/>
                     </group>
                 </group>
