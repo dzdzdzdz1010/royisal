@@ -56,6 +56,161 @@
             </p>
         </field>
     </record>
+
+    <record id="temp_source_list_view" model="ir.ui.view">
+        <field name="name">royisal.temp.source.list.view</field>
+        <field name="model">royisal.source</field>
+        <field name="arch" type="xml">
+            <list editable="bottom">
+                <field name="name"/>
+            </list>
+        </field>
+    </record>
+    <record id="temp_business_type_list_view" model="ir.ui.view">
+        <field name="name">royisal.temp.business.type.list.view</field>
+        <field name="model">royisal.business.type</field>
+        <field name="arch" type="xml">
+            <list editable="bottom">
+                <field name="name"/>
+            </list>
+        </field>
+    </record>
+    <record id="temp_customer_status_list_view" model="ir.ui.view">
+        <field name="name">royisal.temp.customer.status.list.view</field>
+        <field name="model">royisal.customer.status</field>
+        <field name="arch" type="xml">
+            <list editable="bottom">
+                <field name="name"/>
+            </list>
+        </field>
+    </record>
+    <record id="temp_lead_source_offline_list_view" model="ir.ui.view">
+        <field name="name">royisal.temp.lead.source.offline.list.view</field>
+        <field name="model">royisal.lead.source.offline</field>
+        <field name="arch" type="xml">
+            <list editable="bottom">
+                <field name="name"/>
+            </list>
+        </field>
+    </record>
+    <record id="temp_lead_source_online_list_view" model="ir.ui.view">
+        <field name="name">royisal.temp.lead.source.online.list.view</field>
+        <field name="model">royisal.lead.source.online</field>
+        <field name="arch" type="xml">
+            <list editable="bottom">
+                <field name="name"/>
+            </list>
+        </field>
+    </record>
+    <record id="temp_interests_list_view" model="ir.ui.view">
+        <field name="name">royisal.temp.interests.list.view</field>
+        <field name="model">royisal.interests</field>
+        <field name="arch" type="xml">
+            <list editable="bottom">
+                <field name="name"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="source_list_view" model="ir.actions.act_window">
+        <field name="name">Source</field>
+        <field name="res_model">royisal.source</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a new source
+            </p>
+        </field>
+    </record>
+    <record id="business_type_list_view" model="ir.actions.act_window">
+        <field name="name">Business Type</field>
+        <field name="res_model">royisal.business.type</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a new business type
+            </p>
+        </field>
+    </record>
+    <record id="customer_status_list_view" model="ir.actions.act_window">
+        <field name="name">Customer Status</field>
+        <field name="res_model">royisal.customer.status</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a new customer status
+            </p>
+        </field>
+    </record>
+    <record id="online_lead_source_list_view" model="ir.actions.act_window">
+        <field name="name">Lead Source</field>
+        <field name="res_model">royisal.lead.source.online</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a new lead source (online)
+            </p>
+        </field>
+    </record>
+
+    <record id="offline_lead_source_list_view" model="ir.actions.act_window">
+        <field name="name">Lead Source</field>
+        <field name="res_model">royisal.lead.source.offline</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a new lead source (offline)
+            </p>
+        </field>
+    </record>
+    <record id="interests_list_view" model="ir.actions.act_window">
+        <field name="name">Interests</field>
+        <field name="res_model">royisal.interests</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a new interest
+            </p>
+        </field>
+    </record>
+
+    <menuitem
+        id="royisal_source_menu"
+        name="Source"
+        action="source_list_view"
+        parent="crm.crm_menu_config"
+        sequence="100"/>
+    <menuitem
+        id="royisal_business_type_menu"
+        name="Business Type"
+        action="business_type_list_view"
+        parent="crm.crm_menu_config"
+        sequence="100"/>
+    <!-- <menuitem
+        id="royisal_customer_status_menu"
+        name="Customer Status"
+        action="customer_status_list_view"
+        parent="crm.crm_menu_config"
+        sequence="100"/> -->
+    <menuitem
+        id="online_royisal_lead_source_menu"
+        name="Lead Source (Online)"
+        action="online_lead_source_list_view"
+        parent="crm.crm_menu_config"
+        sequence="100"/>
+
+    <menuitem
+        id="offline_royisal_lead_source_menu"
+        name="Lead Source (Offline)"
+        action="offline_lead_source_list_view"
+        parent="crm.crm_menu_config"
+        sequence="100"/>
+    <menuitem
+        id="royisal_interests_menu"
+        name="Interests"
+        action="interests_list_view"
+        parent="crm.crm_menu_config"
+        sequence="100"/>
     <menuitem
         id="royisal_stone_type_menu"
         name="Stone Types"
