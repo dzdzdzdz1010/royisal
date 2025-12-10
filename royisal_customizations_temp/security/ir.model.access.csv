@@ -8,3 +8,4 @@ xmlid_royisal_lead_source_offline,access_royisal_lead_source_offline,model_royis
 
 xml_id_royisal_customer_status,access_royisal_customer_status,model_royisal_customer_status,base.group_user,1,1,1,1
 xml_id_royisal_business_type,access_royisal_business_type,model_royisal_business_type,base.group_user,1,1,1,1
+xml_id_royisal_interests,access_royisal_interests,model_royisal_interests,base.group_user,1,1,1,1

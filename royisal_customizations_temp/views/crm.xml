@@ -10,7 +10,7 @@
                         <field name="first_name"/>
                         <field name="last_name"/>
                         <field name="whatsapp_number"/>
-                        <field name="interested_in"/>
+                        <field name="interested_ids" widget="many2many_tags"/>
                         <field name="buying_role"/>
                         <field name="tax_id_number"/>
                         <field name="business_status"/>

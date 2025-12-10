@@ -29,11 +29,12 @@ class CRMCustomFields(models.Model):
         ('Evangelist', 'Evangelist'),
         ('Other', 'Other'),
     ])
-    interested_in = fields.Selection([
-        ('ODM','ODM (Your brand, our designs)'),
-        ('OEM','OEM (You design, we create)'),
-        ('Other','Other')
-    ])
+    # interested_in = fields.Selection([
+    #     ('ODM','ODM (Your brand, our designs)'),
+    #     ('OEM','OEM (You design, we create)'),
+    #     ('Other','Other')
+    # ])
+    interested_ids = fields.Many2many('royisal.interests','interest_lead_rel','lead_id','interest_id',string="Interested In?")
     customer_status = fields.Selection([
         ('vip', 'V.I.P. (Above 5M)'),
         ('regular', 'Regular (1-5M)'),
@@ -64,7 +65,7 @@ class CRMCustomFields(models.Model):
     design_reference = fields.Char(string="Design Reference")
     deal_amount = fields.Float(string="Deal Amount")
     recent_deal_amount = fields.Float(string="Recent Deal Amount")
-    interested_quantity = fields.Integer(string="Interested Quantity")
+    interested_quantity = fields.Char(string="Interested Quantity")
 
 class RoyisalBusinessType(models.Model):
     _name = 'royisal.business.type'
@@ -85,6 +86,10 @@ class LeadSourceOffline(models.Model):
 
     name = fields.Char(string="Name",required=True)
 
+class RoyisalInterests(models.Model):
+    _name = 'royisal.interests'
+
+    name = fields.Char(string="Name",required=True)
 class RoyisalPlating(models.Model):
     _name = 'royisal.plating'
     _description = 'Royisal Plating'
