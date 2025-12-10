@@ -18,11 +18,12 @@
                     <group string="Details">
                         <field name="source_online_id" widget="many2many_tags"/>
                         <field name="source_offline_id"/>
-                        <field name="medium_id" string="Registered In?"/>
+                        <field name="campaign_id" string="Registered In?"/>
                         <field name="lead_status"/>
                         <field name="lifecycle_stage"/>
                         <field name="customer_status"/>
                         <field name="create_date"/>
+                        <field name="medium_id" string="Action By"/>
                         <field name="last_contacted_date"/>
                     </group>
                 </group>
@@ -35,7 +36,7 @@
                         <field name="plating_id" widget="many2many_tags"/>
                         <field name="design_reference" widget="url"/>
                     </group>
-                    <group>
+                    <group string="Deal Details">
                         <field name="deal_pipeline"/>
                         <field name="deal_amount"/>
                         <field name="user_id" string="Deal Owner"/>
