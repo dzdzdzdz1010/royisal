@@ -1,1 +1,2 @@
-from . import temp_fields
+from . import partner
+from . import crm

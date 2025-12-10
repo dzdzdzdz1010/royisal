@@ -141,6 +141,28 @@
         </record>
         <record id="royisal_plating_11" model="royisal.plating">
         <field name="name">Oxidation</field>
-    </record>
+        </record>
+
+        <record id="business_type_1" model="royisal.business.type">
+            <field name="name">Store Retailers (Startup)</field>
+        </record>
+        <record id="business_type_2" model="royisal.business.type">
+            <field name="name">Store Retailers (1-5 Shops)</field>
+        </record>
+        <record id="business_type_3" model="royisal.business.type">
+            <field name="name">Store Retailers (over 5 shops)</field>
+        </record>
+        <record id="business_type_4" model="royisal.business.type">
+            <field name="name">Online Retailers (Startup 1 website)</field>
+        </record>
+        <record id="business_type_5" model="royisal.business.type">
+            <field name="name">Online Retailers (over 2 websites)</field>
+        </record>
+        <record id="business_type_6" model="royisal.business.type">
+            <field name="name">Wholesale and Retail</field>
+        </record>
+        <record id="business_type_7" model="royisal.business.type">
+            <field name="name">Concept Stage</field>
+        </record>
     </data>
 </odoo>

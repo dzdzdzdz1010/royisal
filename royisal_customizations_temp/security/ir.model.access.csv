@@ -3,3 +3,8 @@ xmlid_royisal_plating,access_royisal_plating,model_royisal_plating,base.group_us
 xmlid_royisal_stone_type,access_royisal_stone_type,model_royisal_stone_type,base.group_user,1,1,1,1
 xmlid_royisal_material,access_royisal_material,model_royisal_material,base.group_user,1,1,1,1
 
+xmlid_royisal_lead_source_online,access_royisal_lead_source_online,model_royisal_lead_source_online,base.group_user,1,1,1,1
+xmlid_royisal_lead_source_offline,access_royisal_lead_source_offline,model_royisal_lead_source_offline,base.group_user,1,1,1,1
+
+xml_id_royisal_customer_status,access_royisal_customer_status,model_royisal_customer_status,base.group_user,1,1,1,1
+xml_id_royisal_business_type,access_royisal_business_type,model_royisal_business_type,base.group_user,1,1,1,1

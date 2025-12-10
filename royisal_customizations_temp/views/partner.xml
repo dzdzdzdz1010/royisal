@@ -1,0 +1,36 @@
+<odoo>
+    <record id="royisal_add_credit_term" model="ir.ui.view">
+        <field name="name">add.credit.term</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="account.view_partner_property_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='property_supplier_payment_term_id']" position="after">
+                <field name="credit_term_id"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="royisal_partner_view" model="ir.ui.view">
+        <field name="name">royisal.partner.view</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='company_registry']" position="attributes">
+                <attribute name="string">Company Registration Number</attribute>
+            </xpath>
+            <xpath expr="//div[hasclass('o_address_format')]" position="after">
+                <field name="shipping_address" placeholder="Shipping Address" invisible="not is_company"/>
+                <field name="number_of_employees" invisible="not is_company"/>
+            </xpath>
+            <xpath expr="//div//div//div//h1" position="after">
+                <h4>
+                    <field name="first_name" placeholder="First Name"/>
+                    <field name="last_name" placeholder="Last Name"/>
+                </h4>
+            </xpath>
+            <xpath expr="//field[@name='vat']" position="before">
+                <field name="whatsapp_number"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

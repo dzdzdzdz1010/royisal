@@ -1,26 +1,4 @@
 <odoo>
-    <record id="royisal_temp_crm" model="ir.ui.view">
-        <field name="name">royisal.temp.crm.view</field>
-        <field name="model">crm.lead</field>
-        <field name="inherit_id" ref="crm.crm_lead_view_form"/>
-        <field name="arch" type="xml">
-            <xpath expr="//group[@name='opportunity_partner']" position="inside">
-                <field name="product_type_custom" />
-                <field name="product_category_id" widget="many2many_tags"/>
-                <field name="material_id" widget="many2many_tags"/>
-                <field name="stone_type_id" widget="many2many_tags"/>
-                <field name="plating_id" widget="many2many_tags"/>
-            </xpath>
-            <xpath expr="//group[@name='lead_partner']" position="inside">
-                <field name="product_type_custom"/>
-                <field name="product_category_id" widget="many2many_tags"/>
-                <field name="material_id" widget="many2many_tags"/>
-                <field name="stone_type_id" widget="many2many_tags"/>
-                <field name="plating_id" widget="many2many_tags"/>
-            </xpath>
-        </field>
-    </record>
-
     <record id="temp_plating_list_view" model="ir.ui.view">
         <field name="name">royisal.temp.plating.list.view</field>
         <field name="model">royisal.plating</field>

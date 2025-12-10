@@ -1,6 +1,6 @@
 #-- coding: utf-8 --
 {
-    'name': 'Temp Royisal',
+    'name': 'Royisal CRM Customizations',
     'version': '1.0',
     'category': 'Custom Module',
     'author': 'Something Somewhere Consulting OPC',
@@ -13,12 +13,15 @@
     'depends': [
         'base',
         'crm',
-        'product'
+        'product',
+        'account'
     ],
     'data': [
         # 'security/security.xml',
         'security/ir.model.access.csv',
         'data/data.xml',
+        'views/crm.xml',
+        'views/partner.xml',
         'views/views.xml',
         
     ],
