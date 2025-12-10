@@ -18,7 +18,7 @@ class CRMCustomFields(models.Model):
         ('Warm Leads', 'Warm Leads'),
         ('Cold Leads', 'Cold Leads'),
         ('Vendor/Supplier', 'Vendor/Supplier'),
-        ('Spammer/Invalid', 'Spammer/Invalid'),
+        ('Scammer/Invalid', 'Scammer/Invalid'),
     ])
     lifecycle_stage = fields.Selection([
         ('Subscriber', 'Subscriber'),
